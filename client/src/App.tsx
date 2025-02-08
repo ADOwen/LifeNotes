@@ -1,5 +1,5 @@
 import './App.css'
-import Note from './components/Note.tsx'
+import Note from './components/Note/Note.tsx'
 
 function App() {
 

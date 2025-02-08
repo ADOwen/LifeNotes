@@ -28,7 +28,6 @@
 .note-title.card-title {
   font-size: 1.2rem;
   margin: 0;
-  color: #fff; /* White text for the title */
   text-transform: uppercase;
   font-weight: bold;
   text-align: center; /* Centers the title */
@@ -42,7 +41,6 @@
 /* Text Styling */
 .card-text {
   font-size: 1rem;
-  color: #000; /* Black text for the description */
   text-align: center; /* Centers the description */
 }
 
