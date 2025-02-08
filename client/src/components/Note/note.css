@@ -1,0 +1,62 @@
+/* General Card Styling */
+.note.card {
+  background: linear-gradient(145deg, #d1d1d1, #aaa); /* Silver and gray gradient background */
+  color: white;  /* White text */
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+  /* Aspect Ratio Fix: Ensures the card remains square-like */
+  width: 100%;
+  aspect-ratio: 1;  /* Keeps it 1:1 aspect ratio */
+  max-width: 400px; /* Keeps it from getting too large */
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: space-between;
+  background-color: #aaa; /* Light gray for the card background */
+}
+
+/* Hover effect for larger screens */
+.note.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Title Styling */
+.note-title.card-title {
+  font-size: 1.2rem;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center; /* Centers the title */
+}
+
+/* Card Body */
+.card-body {
+  flex-grow: 1;
+}
+
+/* Text Styling */
+.card-text {
+  font-size: 1rem;
+  text-align: center; /* Centers the description */
+}
+
+/* Highlight Subject */
+.note-subject.card-text strong {
+  color: #40e0d0;  /* Turquoise color for the subject */
+  position: absolute;
+  top: 16px;  /* Pushes subject to the bottom */
+  right: 16px;   /* Aligns subject to the right */
+}
+
+/* Mobile Adjustments */
+@media (max-width: 400px) {
+  .note.card {
+    max-width: 90%;
+    min-width: 300px;
+    min-height: 200px;
+  }
+}
