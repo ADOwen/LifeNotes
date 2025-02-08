@@ -1,9 +1,10 @@
 import './App.css'
+import Note from './components/Note.tsx'
 
 function App() {
 
   return (
-    <h1>Hello World</h1>
+    <Note title="my first note" description='Hi I am allan' subject='stuff'/>
   )
 }
 
